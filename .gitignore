@@ -1,0 +1,95 @@
+# dependencies
+node_modules/
+engine/.venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# build outputs
+dist/
+src-tauri/target/
+src-tauri/gen/
+*.tsbuildinfo
+
+# caches
+.DS_Store
+.cache/
+
+# test / verification output
+test-output/
+/tmp/
+*.log
+
+# models (post-slice; never commit weights)
+models/
+*.onnx
+*.onnx.data
+
+# local env
+.env
+.env.local
+
+# local databases
+*.sqlite
+*.sqlite3
+*.db
+
+# private working notes / internal spec
+HANDOFF.md
+1792213016013-topshot-culling-mvp-prd.md
+
+# sample photos and videos (never commit personal media)
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+*.heic
+*.heif
+*.dng
+*.cr2
+*.cr3
+*.nef
+*.arw
+*.raf
+*.orf
+*.rw2
+*.JPG
+*.JPEG
+*.PNG
+*.TIF
+*.TIFF
+*.HEIC
+*.HEIF
+*.DNG
+*.CR2
+*.CR3
+*.NEF
+*.ARW
+*.RAF
+*.ORF
+*.RW2
+*.mov
+*.mp4
+*.m4v
+*.avi
+*.mkv
+*.webm
+*.3gp
+*.mts
+*.m2ts
+*.MOV
+*.MP4
+*.M4V
+*.AVI
+*.MKV
+
+# app artwork and icons are source assets, not sample media
+!icon-source.png
+!src-tauri/icons/**
+
+# compiled local Vision probe (source is tracked; rebuild with swiftc)
+engine/native/bin/
